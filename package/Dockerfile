@@ -401,7 +401,7 @@ COPY --chown=root:root --chmod=0755 \
     --from=images /src/k3s-airgap-images.tar /var/lib/rancher/k3s/agent/images/
 #
 # Set up K3s: copy the necessary binaries from the K3s image.
-COPY --from=rancher/k3s:v1.37.1-k3s1 \
+COPY --from=rancher/k3s:v1.37.2-k3s1 \
     /bin/blkid \
     /bin/bandwidth \
     /bin/cni \
